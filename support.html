@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StreamStar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse d-flex align-center"
+            id="navbarText"
+          >
+            <div class="subscription-banner">
+              <span>UNLIMITED VIDEO STREAMING</span>
+              <button class="btn-primary xs">Subscribe</button>
+            </div>
+
+            <ul class="navbar-nav m-auto">
+              <a class="navbar-brand logo" href="#"
+                ><img src="assets/images/logo.png" alt=""
+              /></a>
+            </ul>
+
+            <div class="dropdown">
+              <button
+                class="btn btn-primary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="assets/images/login.png" alt="User" />
+              </button>
+
+              <ul
+                class="dropdown-menu dropdown-menu-right dropdown-menu-dark"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <div class="user-area d-flex">
+                  <img
+                    src="./assets/images/login-gray.svg"
+                    alt="User Thumbnail"
+                  />
+
+                  <div class="d-flex flex-column justify-content-between">
+                    <span>User name</span>
+                    <a href="edit-profile.html" title="Edit Profile"
+                      >Edit Profile ></a
+                    >
+                  </div>
+                </div>
+
+                <li>
+                  <a class="dropdown-item" href="login.html" title="Login"
+                    >Login</a
+                  >
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="terms.html" title="Terms"
+                    >Terms</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="privacy.html" title="Privacy"
+                    >Privacy</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="support.html" title="Support"
+                    >Support</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex align-center justify-content-between"
+                    href="#"
+                    >Logout<img src="./assets/images/logout-icon.svg"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+
+            <select name="language-select" id="language-select">
+              <option value="english" selected>English</option>
+              <option value="english">Spanish</option>
+              <option value="english">German</option>
+            </select>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="title-bar d-flex justify-content-center align-center">
+        <div class="breadcrumb d-flex gap-2">
+          <span>< </span>
+          <a href="index.html" title="Back">Back</a>
+        </div>
+
+        <h1>Support</h1>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-3">
+            <div class="text-content pt-3 pb-5 pe-lg-4">
+              <h2>Contact</h2>
+              <p>
+                Contact We're here to help you get the most out of our services.
+                Feel free to get in touch through the channel of your choice.
+                You can get customer support from Monday to Friday, 8am - 4pm
+                (GMT+2).
+              </p>
+
+              <h3>Phone Number</h3>
+              <a href="tel:+34 607 17 57 20" class="xl">+34 607 17 57 20</a>
+
+              <h3>Email</h3>
+              <a href="mailto:support@streamstar.co" class="xl">support@streamstar.co</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="text-content pt-3 pb-5 ps-lg-4">
+              <h2>Useful Links</h2>
+              <p>Here are some useful links to know more about our services and our conditions.</p>
+
+              <ul>
+                <li><a class="xl" href="account.html" title="Account">Account</a></li>
+                <li><a class="xl" href="terms.html" title="Terms">Terms</a></li>
+                <li><a class="xl" href="privacy.html" title="Privacy">Privacy</a></li>
+                <li><a class="xl" href="cookies.html" title="Cookies">Cookies</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="d-flex justify-content-center align-center flex-column pt-5">
+        <a class="mx-auto" href="index.html"
+          ><img src="./assets/images/logo.png" alt="StreamStar logo"
+        /></a>
+        <ul class="d-flex justify-content-center">
+          <li><a href="terms.html" title="Terms">Terms</a></li>
+          <span> | </span>
+          <li><a href="privacy.html" title="Privacy">Privacy</a></li>
+          <span> | </span>
+          <li><a href="support.html" title="Support">Support</a></li>
+        </ul>
+        <p>All rights reserved, ©streamstar.co 2023</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".hero-slider", {
+        spaceBetween: 30,
+        effect: "fade",
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: true,
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".videos-slider", {
+        slidesPerView: 5,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
