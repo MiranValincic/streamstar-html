@@ -12,14 +12,16 @@
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -35,19 +37,14 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div
-            class="collapse navbar-collapse d-flex align-center"
-            id="navbarText"
-          >
+          <div class="collapse navbar-collapse d-flex align-center" id="navbarText">
             <div class="subscription-banner">
               <span>UNLIMITED VIDEO STREAMING</span>
               <button class="btn-primary xs">Subscribe</button>
             </div>
 
             <ul class="navbar-nav m-auto">
-              <a class="navbar-brand logo" href="#"
-                ><img src="assets/images/logo.png" alt=""
-              /></a>
+              <a class="navbar-brand logo" href="#"><img src="assets/images/logo.png" alt="" /></a>
             </ul>
 
             <div class="dropdown">
@@ -60,12 +57,9 @@
               >
                 <img src="assets/images/login.png" alt="User" />
               </button>
-              <ul
-                class="dropdown-menu dropdown-menu-right dropdown-menu-dark"
-                aria-labelledby="dropdownMenuButton1"
-              >
+              <ul class="dropdown-menu dropdown-menu-right dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
                 <div class="user-area d-flex">
-                  <img src="./assets/images/login-gray.svg" alt="User Thumbnail"/>
+                  <img src="./assets/images/login-gray.svg" alt="User Thumbnail" />
 
                   <div class="d-flex flex-column justify-content-between">
                     <span>User name</span>
@@ -74,7 +68,9 @@
                 </div>
 
                 <li>
-                  <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                  <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Login
+                  </button>
                 </li>
 
                 <li>
@@ -88,9 +84,7 @@
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a
-                    class="dropdown-item d-flex align-center justify-content-between"
-                    href="#"
+                  <a class="dropdown-item d-flex align-center justify-content-between" href="#"
                     >Logout<img src="./assets/images/logout-icon.svg"
                   /></a>
                 </li>
@@ -110,7 +104,6 @@
     <!-- Modal login-->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        
         <div class="modal-content">
           <button type="button" data-bs-dismiss="modal" aria-label="Close">&#10006;</button>
           <div class="modal-header">
@@ -120,11 +113,11 @@
 
           <div class="modal-body">
             <form action="">
-              <input class="form-control" type="text" placeholder="youremail@mail.com">
+              <input class="form-control" type="text" placeholder="youremail@mail.com" />
             </form>
             <button type="button" class="btn btn-primary">Continue</button>
           </div>
-          
+
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary">Connect with Phone</button>
             <button type="button" class="btn btn-secondary">Connect with Username & Password</button>
@@ -132,14 +125,14 @@
         </div>
       </div>
     </div>
-  
+
     <main>
       <div class="container wide-right">
         <div class="hero">
           <div class="swiper hero-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                  <img src="assets/images/spiderman-hero.png" />
+                <img src="assets/images/spiderman-hero.png" />
               </div>
               <div class="swiper-slide">
                 <img src="assets/images/playfrozen.jpg" />
@@ -166,17 +159,17 @@
             <img src="assets/images/movies.svg" alt="Movies" srcset="" />
             <p>Movies</p>
           </a>
-      
+
           <a href="#series">
             <img src="assets/images/series.svg" alt="Series" srcset="" />
             <p>Series</p>
           </a>
-  
+
           <a href="#music">
             <img src="assets/images/music.svg" alt="Music" srcset="" />
             <p>Music</p>
           </a>
-  
+
           <a href="#sports">
             <img src="assets/images/sports.svg" alt="Sports" srcset="" />
             <p>Sports</p>
@@ -184,10 +177,9 @@
         </div>
       </div>
 
-
       <div class="container wide-right">
         <section id="movies" class="movies">
-          <div class="swiper videos-slider">
+          <div class="swiper movies-slider">
             <div class="swiper-wrapper cards">
               <div class="swiper-slide card">
                 <div class="card-image"></div>
@@ -289,11 +281,13 @@
                 </div>
               </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </section>
 
         <section id="series" class="series">
-          <div class="swiper videos-slider">
+          <div class="swiper series-slider">
             <div class="swiper-wrapper cards">
               <div class="swiper-slide card">
                 <div class="card-image"></div>
@@ -395,12 +389,13 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-scrollbar"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </section>
 
         <section id="music" class="music">
-          <div class="swiper videos-slider">
+          <div class="swiper music-slider">
             <div class="swiper-wrapper cards">
               <div class="swiper-slide card">
                 <div class="card-image"></div>
@@ -502,12 +497,13 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-scrollbar"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </section>
 
         <section id="sports" class="sports">
-          <div class="swiper videos-slider">
+          <div class="swiper sports-slider">
             <div class="swiper-wrapper cards">
               <div class="swiper-slide card">
                 <div class="card-image"></div>
@@ -609,7 +605,8 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-scrollbar"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </section>
       </div>
@@ -649,15 +646,6 @@
         },
       });
     </script>
-    <script>
-      var swiper = new Swiper(".videos-slider", {
-        slidesPerView: 5,
-        spaceBetween: 10,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>
