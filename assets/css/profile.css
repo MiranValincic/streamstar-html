@@ -1,3 +1,7 @@
+main {
+  padding-bottom: 120px;
+}
+
 .title-header {
   position: relative;
   background: var(--gray-background);
@@ -72,6 +76,15 @@
     & a {
       color: var(--YellowPrimary);
       text-decoration: none;
+      position: relative;
+      &::after {
+        content: url(../images/arrow-right.svg);
+        position: absolute;
+        right: 0;
+      }
+    }
+    & img {
+      margin-right: 10px;
     }
   }
   & textarea,
@@ -136,7 +149,7 @@
     font-size: 14px;
   }
 
-  & a {
+  & a.manage {
     position: relative;
     &::after {
       content: url(../images/arrow-right.svg);
