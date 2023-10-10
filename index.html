@@ -19,29 +19,53 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse d-flex align-center" id="navbarText">
-          
+          <div
+            class="collapse navbar-collapse d-flex align-center"
+            id="navbarText"
+          >
             <div class="subscription-banner">
               <span>UNLIMITED VIDEO STREAMING</span>
               <button class="btn-primary xs">Subscribe</button>
             </div>
 
-            <ul class="navbar-nav m-auto"> <a class="navbar-brand logo" href="#"><img src="assets/images/logo.png" alt="" /></a></ul>
-            
+            <ul class="navbar-nav m-auto">
+              <a class="navbar-brand logo" href="#"
+                ><img src="assets/images/logo.png" alt=""
+              /></a>
+            </ul>
+
             <div class="dropdown">
-              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <button
+                class="btn btn-primary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 <img src="assets/images/login.png" alt="User" />
               </button>
-              <ul class="dropdown-menu dropdown-menu-right dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+              <ul
+                class="dropdown-menu dropdown-menu-right dropdown-menu-dark"
+                aria-labelledby="dropdownMenuButton1"
+              >
                 <div class="user-area d-flex">
-                  <img src="./assets/images/login-gray.svg" alt="User Thumbnail">
+                  <img src="./assets/images/login-gray.svg" alt="User Thumbnail"/>
 
                   <div class="d-flex flex-column justify-content-between">
                     <span>User name</span>
@@ -49,25 +73,65 @@
                   </div>
                 </div>
 
-                <li><a class="dropdown-item" href="login.html" title="Login">Login</a></li>
-                
-                <li><a class="dropdown-item" href="#" title="Terms">Terms</a></li>
-                <li><a class="dropdown-item" href="#" title="Privacy">Privacy</a></li>
-                <li><a class="dropdown-item" href="#" title="Support">Support</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item d-flex align-center justify-content-between" href="#">Logout<img src="./assets/images/logout-icon.svg" /></a></li>
+                <li>
+                  <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="terms.html" title="Terms">Terms</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="privacy.html" title="Privacy">Privacy</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="support.html" title="Support">Support</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex align-center justify-content-between"
+                    href="#"
+                    >Logout<img src="./assets/images/logout-icon.svg"
+                  /></a>
+                </li>
               </ul>
             </div>
 
             <select name="language-select" id="language-select">
               <option value="english" selected>English</option>
               <option value="english">Spanish</option>
-              <option value="english" >German</option>
+              <option value="english">German</option>
             </select>
           </div>
         </div>
       </nav>
     </header>
+
+    <!-- Modal login-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        
+        <div class="modal-content">
+          <button type="button" data-bs-dismiss="modal" aria-label="Close">&#10006;</button>
+          <div class="modal-header">
+            <h4 class="modal-title" id="loginModalLabel">Login or Signup</h4>
+            <span>Enter your email to Login or Register</span>
+          </div>
+
+          <div class="modal-body">
+            <form action="">
+              <input class="form-control" type="text" placeholder="youremail@mail.com">
+            </form>
+            <button type="button" class="btn btn-primary">Continue</button>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary">Connect with Phone</button>
+            <button type="button" class="btn btn-secondary">Connect with Username & Password</button>
+          </div>
+        </div>
+      </div>
+    </div>
   
     <main>
       <div class="container wide-right">
@@ -559,7 +623,7 @@
           <span> | </span>
           <li><a href="privacy.html" title="Privacy">Privacy</a></li>
           <span> | </span>
-          <li><a href="terms.html" title="Support">Support</a></li>
+          <li><a href="support.html" title="Support">Support</a></li>
         </ul>
         <p>All rights reserved, ©streamstar.co 2023</p>
       </div>
