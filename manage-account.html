@@ -33,11 +33,49 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse d-flex align-center" id="navbarText">
+            <div class="subscription-banner">
+              <span>UNLIMITED VIDEO STREAMING</span>
+              <button class="btn-primary xs">Subscribe</button>
+            </div>
+
+            <ul class="navbar-nav m-auto">
               <a class="navbar-brand logo" href="#"><img src="assets/images/logo.png" alt="" /></a>
             </ul>
-            <span class="login"> <img src="assets/images/login.png" alt="" /> </span>
+
+            <div class="dropdown">
+              <button
+                class="btn btn-primary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="assets/images/login.png" alt="User" />
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+                <div class="user-area d-flex">
+                  <img src="./assets/images/login-gray.svg" alt="User Thumbnail" />
+
+                  <div class="d-flex flex-column justify-content-between">
+                    <span>User name</span>
+                    <a href="edit-profile.html" title="Edit Profile">Edit Profile ></a>
+                  </div>
+                </div>
+
+                <li><a class="dropdown-item" href="login.html" title="Login">Login</a></li>
+
+                <li><a class="dropdown-item" href="#" title="Terms">Terms</a></li>
+                <li><a class="dropdown-item" href="#" title="Privacy">Privacy</a></li>
+                <li><a class="dropdown-item" href="#" title="Support">Support</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item d-flex align-center justify-content-between" href="#"
+                    >Logout<img src="./assets/images/logout-icon.svg"
+                  /></a>
+                </li>
+              </ul>
+            </div>
 
             <select name="language-select" id="language-select">
               <option value="english" selected>English</option>
