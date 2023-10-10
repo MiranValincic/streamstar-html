@@ -20,77 +20,78 @@
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarText"
-            aria-controls="navbarText"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <a class="navbar-brand logo" href="#"><img src="assets/images/logo.png" alt="" /></a>
-            </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <a class="navbar-brand logo" href="#"><img src="assets/images/logo.png" alt="" /></a></ul>
             <span class="login"> <img src="assets/images/login.png" alt="" /> </span>
-            <span class="language"> <img src="assets/images/germany-flag.png" alt="" /> </span>
+
+            <select name="language-select" id="language-select">
+              <option value="english" selected>English</option>
+              <option value="english">Spanish</option>
+              <option value="english" >German</option>
+            </select>
           </div>
         </div>
       </nav>
-      <div class="hero">
-        <div class="swiper hero-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="assets/images/spiderman-hero.png" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/images/playfrozen.jpg" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/images/spiderman-hero.png" />
-            </div>
-            <div class="swiper-slide">
-              <img src="assets/images/playfrozen.jpg" />
+    </header>
+  
+    <main>
+      <div class="container wide-right">
+        <div class="hero">
+          <div class="swiper hero-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <img src="assets/images/spiderman-hero.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/playfrozen.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/spiderman-hero.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/playfrozen.jpg" />
+              </div>
+
             </div>
           </div>
         </div>
       </div>
-      <div class="main-title">
-        <h1>Stream<span>star</span>.co, Unlimited content</h1>
-        <p>The Latest Movies, TV Shows, Games, Music & More...</p>
-      </div>
-      <div class="icons">
-        <div class="stream-icon">
-          <a href="#movies">
-            <img src="assets/images/movies.svg" alt="" srcset="" />
-          </a>
-          <p>Movies</p>
-        </div>
-        <div class="learn-icon">
-          <a href="#series">
-            <img src="assets/images/series.svg" alt="" srcset="" />
-          </a>
-          <p>Series</p>
-        </div>
-        <div class="play-icon">
-          <a href="#music">
-            <img src="assets/images/music.svg" alt="" srcset="" />
-          </a>
-          <p>Music</p>
-        </div>
-        <div class="fitness-icon">
-          <a href="#sports">
-            <img src="assets/images/sports.svg" alt="" srcset="" />
-          </a>
-          <p>Sports</p>
-        </div>
-      </div>
-    </header>
-    <main>
+
       <div class="container">
+        <div class="main-title mt-5">
+          <h1>Stream<span>star</span>.co, Unlimited content</h1>
+          <p>The Latest Movies, TV Shows, Games, Music & More...</p>
+        </div>
+
+        <div class="icons d-flex justify-content-center my-5">
+          <a href="#movies">
+            <img src="assets/images/movies.svg" alt="Movies" srcset="" />
+            <p>Movies</p>
+          </a>
+      
+          <a href="#series">
+            <img src="assets/images/series.svg" alt="Series" srcset="" />
+            <p>Series</p>
+          </a>
+  
+          <a href="#music">
+            <img src="assets/images/music.svg" alt="Music" srcset="" />
+            <p>Music</p>
+          </a>
+  
+          <a href="#sports">
+            <img src="assets/images/sports.svg" alt="Sports" srcset="" />
+            <p>Sports</p>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="container wide-right">
         <section id="movies" class="movies">
           <div class="swiper videos-slider">
             <div class="swiper-wrapper cards">
@@ -196,6 +197,7 @@
             </div>
           </div>
         </section>
+
         <section id="series" class="series">
           <div class="swiper videos-slider">
             <div class="swiper-wrapper cards">
@@ -302,6 +304,7 @@
             <div class="swiper-scrollbar"></div>
           </div>
         </section>
+
         <section id="music" class="music">
           <div class="swiper videos-slider">
             <div class="swiper-wrapper cards">
@@ -408,6 +411,7 @@
             <div class="swiper-scrollbar"></div>
           </div>
         </section>
+
         <section id="sports" class="sports">
           <div class="swiper videos-slider">
             <div class="swiper-wrapper cards">
@@ -516,7 +520,12 @@
         </section>
       </div>
     </main>
-    <footer></footer>
+
+    <footer>
+      <div class="d-flex justify-content-center align-center ">
+
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
