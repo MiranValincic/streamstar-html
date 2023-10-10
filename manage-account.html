@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/profile.css" />
   </head>
   <body class="product">
     <header>
@@ -47,62 +48,36 @@
         </div>
       </nav>
     </header>
-    <main class="product">
-      <div class="movie-view">
-        <div class="video-player">
-          <img class="trailer-image" src="assets/images/trailer.png" />
-        </div>
-        <div class="video-description">
-          <img class="modal-image" src="assets/images/guardians.jpg" />
-          <div class="title">
-            <img src="assets/images/stream.svg" />
-            <div class="title-text">
-              <h2>Guardians of the Galaxy <br /></h2>
-              <span>90 min. Estados Unidos</span>
+    <main class="profile">
+      <div class="title-header manage">
+        <a href="profile.html" class="back-btn">Back</a>
+        <h2>Manage Account</h2>
+      </div>
+      <div class="container">
+        <div class="active-subs">
+          <h3>Active</h3>
+          <p>Your active subscriptions are listed here for you to manage.</p>
+          <div class="row justify-content-between my-5">
+            <div class="col-6">
+              <img src="assets/images/logo.png" alt="StreamStar" />
             </div>
-            <img src="assets/images/btn-like.png" alt="Like" />
-            <img src="assets/images/btn-share.png" alt="Like" />
+            <div class="col-4 link">
+              <a href="#">Manage</a>
+            </div>
           </div>
-          <div class="description">
-            <h2>Description:</h2>
-            <p>
-              In 1988, following his mother's death, a young Peter Quill is abducted from Earth by the Ravagers, a group of
-              alien thieves and smugglers led by Yondu Udonta. In 2014, on the abandoned planet Morag, Quill steals a
-              mysterious Orb, but is attacked by forces of the fanatical Kree renegade Ronan the Accuser led by Korath.
-            </p>
-            <h2>Cast</h2>
-            <p>Chris Pratt,Vin Diese,Bradley Cooper</p>
-          </div>
-          <div class="buttons">
-            <button class="btn-navigation">Previous</button>
-
-            <button type="button" class="btn btn-watch" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Watch Movie
-            </button>
-
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="staticBackdrop"
-              data-bs-backdrop="static"
-              data-bs-keyboard="false"
-              tabindex="-1"
-              aria-labelledby="staticBackdropLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                      <img src="assets/images/close-btn.svg" alt="" />
-                    </button>
-                    <img src="assets/images/trailer.png" alt="" />
-                  </div>
-                </div>
+          <div class="row justify-content-between my-5">
+            <div class="col-6">
+              <div class="d-flex justify-content-start">
+                <img class="google-icon" src="assets/images/google-logo.svg" alt="StreamStar" />
+                <p>mail@gmail.com</p>
               </div>
             </div>
-            <button class="btn-navigation">Next</button>
+            <div class="col-4 link">
+              <a href="#">Manage</a>
+            </div>
           </div>
+          <h3>Available Service</h3>
+          <p>Subscribe to our amazing service and enjoy unlimited access with no ads.</p>
         </div>
       </div>
     </main>
