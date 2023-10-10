@@ -2,11 +2,10 @@
   --blue-primary: #00a7e5;
   --background-color: #0D0D0D;
   --gray-background: #181818;
-  --YellowPrimary: #FFCD1D;
+  --YellowPrimary: #ffcd1d;
   --PurplePrimary: #943b99;
   --GreenPrimary: #009d00;
-  --white:  #F4F4F4;
-
+  --white: #f4f4f4;
 }
 
 
@@ -59,12 +58,13 @@ html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
- font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
 }
 
+
 main {
-  padding: 0 0 100px;
+  padding: 100px 0 100px 0;
 }
 
 .nav-link {
@@ -73,6 +73,7 @@ main {
 
 
 /* Header */
+
 
 header {
   padding: 25px 60px;
@@ -159,6 +160,7 @@ header {
   background-position: center;
   background-size: contain;
 }
+
 
 .swiper-slide img {
   display: block;
@@ -266,3 +268,4 @@ section {
 .music::before {content: "Music";}
 
 .sports::before {content: "Sports";}
+
