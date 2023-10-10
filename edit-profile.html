@@ -90,8 +90,9 @@
       <div class="title-header">
         <a href="profile.html" class="back-btn">Back</a>
         <h2>Edit Profile</h2>
-        <img class="profile-img" src="assets/images/profile.jpg" alt="Profile" />
-        <img class="changeImage" src="assets/images/changeImg.svg" alt="Change Image" />
+        <div class="profile-image">
+          <img class="profile-img" src="assets/images/profile.jpg" alt="Profile" />
+        </div>
       </div>
       <div class="container">
         <div class="info">
@@ -99,28 +100,28 @@
             <div class="row my-3">
               <div class="col-6">
                 <label for="name">First Name</label>
-                <input type="text" placeholder="" />
+                <input name="name" id="name" type="text" placeholder="" />
               </div>
               <div class="col-6">
-                <label for="Lastname">Last Name</label>
-                <input type="text" />
+                <label for="lastname">Last Name</label>
+                <input name="lastname" id="lastname" type="text" />
               </div>
             </div>
             <div class="row my-3">
-              <label for="email">Email Address*</label>
+              <label for="email">Email Address</label>
               <div class="col-12">
-                <input type="email" />
+                <input name="email" id="email" type="email" />
               </div>
             </div>
             <div class="row my-3">
-              <label for="about">About</label>
+              <h3 for="about">About</h3>
               <p>Write a few sentences about yourself.</p>
               <div class="col">
                 <textarea name="about" id="about" cols="30" rows="10"></textarea>
               </div>
             </div>
             <div class="row my-3">
-              <label for="country">Country</label>
+              <h3>Country</h3>
               <div class="col">
                 <select name="Select" id="">
                   <option value="england">England</option>
@@ -131,7 +132,7 @@
               </div>
             </div>
             <div class="row my-3">
-              <label for="language">Language</label>
+              <h3>Language</h3>
               <div class="col">
                 <select name="Select Language" id="">
                   <option value="england">English</option>
@@ -142,7 +143,7 @@
               </div>
             </div>
             <div class="row mt-5">
-              <label for="socials">Social Profiles</label>
+              <h3>Social Profiles</h3>
               <p>Paste URL of social link profile of your accounts.</p>
             </div>
             <div class="row my-3 justify-content-center align-items-center">
