@@ -40,7 +40,7 @@
           <div class="collapse navbar-collapse d-flex align-center" id="navbarText">
             <div class="subscription-banner">
               <span>UNLIMITED VIDEO STREAMING</span>
-              <button class="btn-primary xs">Subscribe</button>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#subscriptionModal" class="btn-primary xs">Subscribe</button>
             </div>
 
             <ul class="navbar-nav m-auto">
@@ -68,9 +68,7 @@
                 </div>
 
                 <li>
-                  <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginModal">
-                    Login
-                  </button>
+                  <button type="button" class="btn-primary xs" data-bs-toggle="modal" data-bs-target="#loginModal"> Login</button>
                 </li>
 
                 <li>
@@ -92,9 +90,9 @@
             </div>
 
             <select name="language-select" id="language-select">
-              <option value="english" selected>English</option>
-              <option value="english">Spanish</option>
-              <option value="english">German</option>
+                <option value="english" selected>English</option>
+                <option value="english">Spanish</option>
+                <option value="english">German</option>
             </select>
           </div>
         </div>
@@ -113,14 +111,94 @@
 
           <div class="modal-body">
             <form action="">
-              <input class="form-control" type="text" placeholder="youremail@mail.com" />
+              <input class="mb-4" type="text" placeholder="youremail@mail.com" />
             </form>
-            <button type="button" class="btn btn-primary">Continue</button>
+            <button type="button" class="btn-primary">Continue</button>
+
+            <div class="condition mt-4">Or</div>
           </div>
 
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary">Connect with Phone</button>
-            <button type="button" class="btn btn-secondary">Connect with Username & Password</button>
+            <button type="button" class="btn-secondary mb-3 mobile" data-bs-toggle="modal" data-bs-target="#mobileModal">Connect with Phone</button>
+            <button type="button" class="btn-secondary username" data-bs-toggle="modal" data-bs-target="#registerModal">Connect with Username & Password</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Subscription-->
+    <div class="modal modal fade" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">&#10006;</button>
+          <div class="modal-header flex-column">
+            <h4 class="modal-title" id="subscriptionModalLabel">STREAM PREMIUM</h4>
+            <span>Get unlimited Acces with no Ads neither Apps purchase</span>
+          </div>
+
+          <div class="modal-body">
+            <a class="btn-primary xl" title="Try for Free with Credit Card"><img src="assets/images/credit-card-icon.png" alt="Credit Card Button">Try for Free with Credit Card <span>🡲</span>  </a>
+
+            <button type="button" data-bs-toggle="modal" data-bs-target="#registerModal" class="btn-secondary my-5 d-block mx-auto">LOGIN or REGISTER</button>
+
+            <a class="link d-block" data-bs-dismiss="modal">No Thanks</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Register-->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">&#10006;</button>
+          <div class="modal-header flex-column">
+            <h4 class="modal-title" id="registerModalLabel">Login or Signup</h4>
+            <span>Welcome to Streamstar</span>
+          </div>
+
+          <div class="modal-body">
+            <form action="">
+              <input class="mb-4" type="email" placeholder="youremail@mail.com" />
+              <input class="mb-4" type="password" placeholder="Password" />
+            </form>
+            <button type="button" class="btn-primary">Login</button>
+
+            <div class="condition mt-4">Or</div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn-secondary mb-3 mobile" data-bs-toggle="modal" data-bs-target="#mobileModal">Connect with Phone</button>
+            <button type="button" class="btn-secondary email" data-bs-toggle="modal" data-bs-target="#loginModal">Connect with Email</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Mobile-->
+    <div class="modal fade" id="mobileModal" tabindex="-1" aria-labelledby="mobileModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">&#10006;</button>
+          <div class="modal-header flex-column">
+            <h4 class="modal-title" id="mobileModalLabel">Login or Signup</h4>
+          </div>
+
+          <div class="modal-body">
+            <form action="">
+              <input class="mb-4" type="tel" placeholder="Phone number" />
+            </form>
+
+            <div class="g-recaptcha mb-4 d-flex justify-content-center" data-sitekey="YOUR_SITE_KEY"></div>
+
+            <button type="button" class="btn-primary">Login</button>
+
+            <div class="condition mt-4">Or</div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn-secondary email" data-bs-toggle="modal" data-bs-target="#loginModal">Connect with Email</button>
+            <button type="button" class="btn-secondary username" data-bs-toggle="modal" data-bs-target="#registerModal">Connect with Username & Password</button>
           </div>
         </div>
       </div>
@@ -631,6 +709,9 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://www.google.com/recaptcha/api.js?render=YOUR_SITE_KEY"></script>
+
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".hero-slider", {
