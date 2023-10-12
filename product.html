@@ -15,147 +15,278 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/movie-view.css" />
   </head>
-  <body class="product">
+  <body>
     <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarText"
-            aria-controls="navbarText"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+      <nav class="navbar navbar-expand-lg d-flex align-center">
+        <div class="subscription-banner">
+          <span>UNLIMITED VIDEO STREAMING</span>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#subscriptionModal" class="btn-primary xs">
+            Subscribe
           </button>
-
-          <div class="collapse navbar-collapse d-flex align-center" id="navbarText">
-            <div class="subscription-banner">
-              <span>UNLIMITED VIDEO STREAMING</span>
-              <button class="btn-primary xs">Subscribe</button>
-            </div>
-
-            <ul class="navbar-nav m-auto">
-              <a class="navbar-brand logo" href="#"><img src="assets/images/logo.png" alt="" /></a>
-            </ul>
-
-            <div class="dropdown">
-              <button
-                class="btn btn-primary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img src="assets/images/login.png" alt="User" />
-              </button>
-              <ul class="dropdown-menu dropdown-menu-right dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
-                <div class="user-area d-flex">
-                  <img src="./assets/images/login-gray.svg" alt="User Thumbnail" />
-
-                  <div class="d-flex flex-column justify-content-between">
-                    <span>User name</span>
-                    <a href="edit-profile.html" title="Edit Profile">Edit Profile ></a>
-                  </div>
-                </div>
-
-                <li>
-                  <a class="dropdown-item" href="login.html" title="Login">Login</a>
-                </li>
-
-                <li>
-                  <a class="dropdown-item" href="terms.html" title="Terms">Terms</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="privacy.html" title="Privacy">Privacy</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="support.html" title="Support">Support</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item d-flex align-center justify-content-between" href="#"
-                    >Logout<img src="./assets/images/logout-icon.svg"
-                  /></a>
-                </li>
-              </ul>
-            </div>
-
-            <select name="language-select" id="language-select">
-              <option value="english" selected>English</option>
-              <option value="english">Spanish</option>
-              <option value="english">German</option>
-            </select>
-          </div>
         </div>
+
+        <a class="navbar-brand logo m-auto" href="#"><img src="assets/images/logo.png" alt="" /></a>
+
+        <div class="dropdown">
+          <button
+            class="btn btn-primary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img src="assets/images/login.png" alt="User" />
+          </button>
+          <ul class="dropdown-menu dropdown-menu-right dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+            <div class="user-area d-flex">
+              <img src="./assets/images/login-gray.svg" alt="User Thumbnail" />
+
+              <div class="d-flex flex-column justify-content-between">
+                <span>User name</span>
+                <a href="edit-profile.html" title="Edit Profile">Edit Profile ></a>
+              </div>
+            </div>
+
+            <li>
+              <button type="button" class="btn-primary xs" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="terms.html" title="Terms">Terms</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="privacy.html" title="Privacy">Privacy</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="support.html" title="Support">Support</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item d-flex align-center justify-content-between" href="#"
+                >Logout<img src="./assets/images/logout-icon.svg"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <select name="language-select" id="language-select">
+          <option value="english" selected>English</option>
+          <option value="english">Spanish</option>
+          <option value="english">German</option>
+        </select>
       </nav>
     </header>
-    <main class="product">
-      <div class="movie-view">
-        <div class="video-player">
-          <img class="trailer-image" src="assets/images/trailer.png" />
+
+    <!-- Modal login-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">&#10006;</button>
+          <div class="modal-header flex-column">
+            <h4 class="modal-title" id="loginModalLabel">Login or Signup</h4>
+            <span>Enter your email to Login or Register</span>
+          </div>
+
+          <div class="modal-body">
+            <form action="">
+              <input class="mb-4" type="text" placeholder="youremail@mail.com" />
+            </form>
+            <button type="button" class="btn-primary">Continue</button>
+
+            <div class="condition mt-4">Or</div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn-secondary mb-3 mobile" data-bs-toggle="modal" data-bs-target="#mobileModal">
+              Connect with Phone
+            </button>
+            <button type="button" class="btn-secondary username" data-bs-toggle="modal" data-bs-target="#registerModal">
+              Connect with Username & Password
+            </button>
+          </div>
         </div>
-        <div class="video-description">
-          <img class="modal-image" src="assets/images/guardians.jpg" />
-          <div class="title">
-            <img src="assets/images/stream.svg" />
-            <div class="title-text">
-              <h2>Guardians of the Galaxy <br /></h2>
-              <span>90 min. Estados Unidos</span>
-            </div>
-            <img src="assets/images/btn-like.png" alt="Like" />
-            <img src="assets/images/btn-share.png" alt="Like" />
+      </div>
+    </div>
+
+    <!-- Modal Subscription-->
+    <div
+      class="modal modal fade"
+      id="subscriptionModal"
+      tabindex="-1"
+      aria-labelledby="subscriptionModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">&#10006;</button>
+          <div class="modal-header flex-column">
+            <h4 class="modal-title" id="subscriptionModalLabel">STREAM PREMIUM</h4>
+            <span>Get unlimited Acces with no Ads neither Apps purchase</span>
           </div>
-          <div class="description">
-            <h2>Description:</h2>
-            <p>
-              In 1988, following his mother's death, a young Peter Quill is abducted from Earth by the Ravagers, a group of
-              alien thieves and smugglers led by Yondu Udonta. In 2014, on the abandoned planet Morag, Quill steals a
-              mysterious Orb, but is attacked by forces of the fanatical Kree renegade Ronan the Accuser led by Korath.
-            </p>
-            <h2>Cast</h2>
-            <p>Chris Pratt,Vin Diese,Bradley Cooper</p>
-          </div>
-          <div class="buttons">
-            <button class="btn-navigation">Previous</button>
-            <!-- <button class='btn-watch' >
-              Watch Movie
-            </button> -->
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-watch" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Watch Movie
+
+          <div class="modal-body">
+            <a class="btn-primary xl" title="Try for Free with Credit Card"
+              ><img src="assets/images/credit-card-icon.png" alt="Credit Card Button" />Try for Free with Credit Card
+              <span>🡲</span>
+            </a>
+
+            <button
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#registerModal"
+              class="btn-secondary my-5 d-block mx-auto"
+            >
+              LOGIN or REGISTER
             </button>
 
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="staticBackdrop"
-              data-bs-backdrop="static"
-              data-bs-keyboard="false"
-              tabindex="-1"
-              aria-labelledby="staticBackdropLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
-                      <img src="assets/images/close-btn.svg" alt="" />
-                    </button>
-                    <img src="assets/images/trailer.png" alt="" />
+            <a class="link d-block" data-bs-dismiss="modal">No Thanks</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Register-->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">&#10006;</button>
+          <div class="modal-header flex-column">
+            <h4 class="modal-title" id="registerModalLabel">Login or Signup</h4>
+            <span>Welcome to Streamstar</span>
+          </div>
+
+          <div class="modal-body">
+            <form action="">
+              <input class="mb-4" type="email" placeholder="youremail@mail.com" />
+              <input class="mb-4" type="password" placeholder="Password" />
+            </form>
+            <button type="button" class="btn-primary">Login</button>
+
+            <div class="condition mt-4">Or</div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn-secondary mb-3 mobile" data-bs-toggle="modal" data-bs-target="#mobileModal">
+              Connect with Phone
+            </button>
+            <button type="button" class="btn-secondary email" data-bs-toggle="modal" data-bs-target="#loginModal">
+              Connect with Email
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Mobile-->
+    <div class="modal fade" id="mobileModal" tabindex="-1" aria-labelledby="mobileModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">&#10006;</button>
+          <div class="modal-header flex-column">
+            <h4 class="modal-title" id="mobileModalLabel">Login or Signup</h4>
+          </div>
+
+          <div class="modal-body">
+            <form action="">
+              <input class="mb-4" type="tel" placeholder="Phone number" />
+            </form>
+
+            <div class="g-recaptcha mb-4 d-flex justify-content-center" data-sitekey="YOUR_SITE_KEY"></div>
+
+            <button type="button" class="btn-primary">Login</button>
+
+            <div class="condition mt-4">Or</div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn-secondary email" data-bs-toggle="modal" data-bs-target="#loginModal">
+              Connect with Email
+            </button>
+            <button type="button" class="btn-secondary username" data-bs-toggle="modal" data-bs-target="#registerModal">
+              Connect with Username & Password
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="product">
+      <div class="movie_card">
+        <div class="movie-view">
+          <div class="video-player">
+            <img class="trailer-image" src="assets/images/trailer.png" />
+          </div>
+          <div class="video-description">
+            <img class="modal-image" src="assets/images/guardians.jpg" />
+            <div class="title">
+              <img src="assets/images/stream.svg" />
+              <div class="title-text">
+                <h2>Guardians of the Galaxy <br /></h2>
+                <span>90 min. Estados Unidos</span>
+              </div>
+              <img src="assets/images/btn-like.png" alt="Like" />
+              <img src="assets/images/btn-share.png" alt="Like" />
+            </div>
+            <div class="description">
+              <h2>Description:</h2>
+              <p>
+                In 1988, following his mother's death, a young Peter Quill is abducted from Earth by the Ravagers, a group of
+                alien thieves and smugglers led by Yondu Udonta. In 2014...
+              </p>
+              <h2>Cast</h2>
+              <p>Chris Pratt,Vin Diese,Bradley Cooper</p>
+            </div>
+            <div class="buttons">
+              <button class="btn-navigation">Previous</button>
+              <!-- <button class='btn-watch' >
+                Watch Movie
+              </button> -->
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-watch" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Watch Movie
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="staticBackdrop"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="assets/images/close-btn.svg" alt="" />
+                      </button>
+                      <img src="assets/images/trailer.png" alt="" />
+                    </div>
                   </div>
                 </div>
               </div>
+              <button class="btn-navigation">Next</button>
             </div>
-            <button class="btn-navigation">Next</button>
           </div>
         </div>
       </div>
     </main>
+    <footer>
+      <div class="d-flex justify-content-center align-center flex-column">
+        <a class="mx-auto" href="index.html"><img src="./assets/images/logo.png" alt="StreamStar logo" /></a>
+        <ul class="d-flex justify-content-center">
+          <li><a href="terms.html" title="Terms">Terms</a></li>
+          <span> | </span>
+          <li><a href="privacy.html" title="Privacy">Privacy</a></li>
+          <span> | </span>
+          <li><a href="support.html" title="Support">Support</a></li>
+        </ul>
+        <p>All rights reserved, ©streamstar.co 2023</p>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
