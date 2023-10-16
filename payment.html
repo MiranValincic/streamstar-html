@@ -11,98 +11,74 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body class="product">
+
+  <body>
     <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarText"
-            aria-controls="navbarText"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div
-            class="collapse navbar-collapse d-flex align-center"
-            id="navbarText"
-          >
-            <div class="subscription-banner">
-              <span>UNLIMITED VIDEO STREAMING</span>
-              <button class="btn-primary xs">Subscribe</button>
-            </div>
-
-            <ul class="navbar-nav m-auto">
-              <a class="navbar-brand logo" href="#"
-                ><img src="assets/images/logo.png" alt=""
-              /></a>
-            </ul>
-
-            <div class="dropdown">
-              <button
-                class="btn btn-primary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img src="assets/images/login.png" alt="User" />
-              </button>
-              <ul
-                class="dropdown-menu dropdown-menu-right dropdown-menu-dark"
-                aria-labelledby="dropdownMenuButton1"
-              >
-                <div class="user-area d-flex">
-                  <img src="./assets/images/login-gray.svg" alt="User Thumbnail"/>
-
-                  <div class="d-flex flex-column justify-content-between">
-                    <span>User name</span>
-                    <a href="edit-profile.html" title="Edit Profile">Edit Profile ></a>
-                  </div>
-                </div>
-
-                <li>
-                  <a class="dropdown-item" href="login.html" title="Login"
-                    >Login</a
-                  >
-                </li>
-
-                <li>
-                  <a class="dropdown-item" href="terms.html" title="Terms">Terms</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="privacy.html" title="Privacy">Privacy</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="support.html" title="Support">Support</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a
-                    class="dropdown-item d-flex align-center justify-content-between"
-                    href="#"
-                    >Logout<img src="./assets/images/logout-icon.svg"
-                  /></a>
-                </li>
-              </ul>
-            </div>
-
-            <select name="language-select" id="language-select">
-              <option value="english" selected>English</option>
-              <option value="english">Spanish</option>
-              <option value="english">German</option>
-            </select>
-          </div>
+      <nav class="navbar navbar-expand-lg d-flex align-center">
+        <div class="subscription-banner">
+          <span>UNLIMITED VIDEO STREAMING</span>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#subscriptionModal" class="btn-primary xs">Subscribe</button>
         </div>
+
+        <a class="navbar-brand logo m-auto" href="#"><img src="assets/images/logo.png" alt="" /></a>
+
+        <div class="dropdown">
+          <button
+            class="btn btn-primary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img src="assets/images/login.png" alt="User" />
+          </button>
+          <ul class="dropdown-menu dropdown-menu-right dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+            <div class="user-area d-flex">
+              <img src="./assets/images/login-gray.svg" alt="User Thumbnail" />
+
+              <div class="d-flex flex-column justify-content-between">
+                <span>User name</span>
+                <a href="edit-profile.html" title="Edit Profile">Edit Profile ></a>
+              </div>
+            </div>
+
+            <li>
+              <button type="button" class="btn-primary xs" data-bs-toggle="modal" data-bs-target="#loginModal"> Login</button>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="terms.html" title="Terms">Terms</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="privacy.html" title="Privacy">Privacy</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="support.html" title="Support">Support</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item d-flex align-center justify-content-between" href="#"
+                >Logout<img src="./assets/images/logout-icon.svg"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <select name="language-select" id="language-select">
+            <option value="english" selected>English</option>
+            <option value="english">Spanish</option>
+            <option value="english">German</option>
+        </select>
       </nav>
     </header>
 
