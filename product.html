@@ -219,14 +219,18 @@
           </div>
           <div class="video-description">
             <img class="modal-image" src="assets/images/guardians.jpg" />
+            <span class="bck-thumbnail"></span>
             <div class="title">
-              <img src="assets/images/stream.svg" />
+              <!-- <img src="assets/images/stream.svg" /> -->
               <div class="title-text">
                 <h2>Guardians of the Galaxy <br /></h2>
                 <span>90 min. Estados Unidos</span>
               </div>
-              <img src="assets/images/btn-like.png" alt="Like" />
-              <img src="assets/images/btn-share.png" alt="Like" />
+
+              <div class="social-actions ms-auto d-flex gap-4">
+                <button class="btn-secondary btn-icon" href=""><img src="assets/images/btn-like.svg" alt="Like" /></button>
+                <button class="btn-secondary btn-icon" href=""><img src="assets/images/btn-share.svg" alt="Like" /></button>
+              </div>
             </div>
             <div class="description">
               <h2>Description:</h2>
@@ -238,18 +242,18 @@
               <p>Chris Pratt,Vin Diese,Bradley Cooper</p>
             </div>
             <div class="buttons">
-              <button class="btn-navigation">Previous</button>
+              <button class="btn-secondary btn-icon">&#129032;</button>
               <!-- <button class='btn-watch' >
                 Watch Movie
               </button> -->
               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-watch" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Watch Movie
+              <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Watch
               </button>
 
               <!-- Modal -->
               <div
-                class="modal fade"
+                class="modal fade modal-full"
                 id="staticBackdrop"
                 data-bs-backdrop="static"
                 data-bs-keyboard="false"
@@ -268,7 +272,7 @@
                   </div>
                 </div>
               </div>
-              <button class="btn-navigation">Next</button>
+              <button class="btn-secondary btn-icon">&#129034;</button>
             </div>
           </div>
         </div>
