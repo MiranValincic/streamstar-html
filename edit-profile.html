@@ -83,13 +83,20 @@
     </header>
     
     <main class="profile">
-      <div class="title-header">
-        <a href="profile.html" class="back-btn">Back</a>
-        <h2>Edit Profile</h2>
-        <div class="profile-image">
-          <img class="profile-img" src="assets/images/profile.jpg" alt="Profile" />
+      
+      <div class="title-header mb-0">
+        <div class="breadcrumb d-flex gap-2">
+          <span>< </span>
+          <a href="index.html" title="Back">Back</a>
         </div>
+
+        <h1>Edit Profile</h1>
+
+        <button class="profile-btn">
+          <img class="profile-img" src="assets/images/profile.jpg" alt="Profile" />
+        </button>
       </div>
+
       <div class="container">
         <div class="info">
           <form action="">
@@ -143,7 +150,7 @@
               <p>Paste URL of social link profile of your accounts.</p>
             </div>
             <div class="row my-4 justify-content-center align-items-center">
-              <div class="col-2">
+              <div class="col-2 p-0 ps-2 p-lg-3">
                 <img src="assets/images/facebook.png" alt="" />
               </div>
               <div class="col-10">
@@ -151,7 +158,7 @@
               </div>
             </div>
             <div class="row my-4 justify-content-center align-items-center">
-              <div class="col-2">
+              <div class="col-2 p-0 ps-2 p-lg-3">
                 <img src="assets/images/instagram.png" alt="" />
               </div>
               <div class="col-10">
@@ -159,15 +166,17 @@
               </div>
             </div>
             <div class="row my-4 justify-content-center align-items-center">
-              <div class="col-2">
+              <div class="col-2 p-0 ps-2 p-lg-3">
                 <img src="assets/images/youtube.png" alt="" />
               </div>
               <div class="col-10">
                 <input type="text" />
               </div>
             </div>
-            <div class="row justify-content-end">
-              <button>Save</button>
+            <div class="row">
+              <div class="col-12 justify-content-end d-flex">
+                <button>Save</button>
+              </div>
             </div>
           </form>
         </div>

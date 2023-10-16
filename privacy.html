@@ -24,98 +24,96 @@
 
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg d-flex align-center">
+        <div class="subscription-banner">
+          <span>UNLIMITED VIDEO STREAMING</span>
           <button
-            class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarText"
-            aria-controls="navbarText"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-bs-toggle="modal"
+            data-bs-target="#subscriptionModal"
+            class="btn-primary xs"
           >
-            <span class="navbar-toggler-icon"></span>
+            Subscribe
           </button>
-
-          <div
-            class="collapse navbar-collapse d-flex align-center"
-            id="navbarText"
-          >
-            <div class="subscription-banner">
-              <span>UNLIMITED VIDEO STREAMING</span>
-              <button class="btn-primary xs">Subscribe</button>
-            </div>
-
-            <ul class="navbar-nav m-auto">
-              <a class="navbar-brand logo" href="#"
-                ><img src="assets/images/logo.png" alt=""
-              /></a>
-            </ul>
-
-            <div class="dropdown">
-              <button
-                class="btn btn-primary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img src="assets/images/login.png" alt="User" />
-              </button>
-              <ul
-                class="dropdown-menu dropdown-menu-right dropdown-menu-dark"
-                aria-labelledby="dropdownMenuButton1"
-              >
-                <div class="user-area d-flex">
-                  <img src="./assets/images/login-gray.svg" alt="User Thumbnail"/>
-
-                  <div class="d-flex flex-column justify-content-between">
-                    <span>User name</span>
-                    <a href="edit-profile.html" title="Edit Profile">Edit Profile ></a>
-                  </div>
-                </div>
-
-                <li>
-                  <a class="dropdown-item" href="login.html" title="Login"
-                    >Login</a
-                  >
-                </li>
-
-                <li>
-                  <a class="dropdown-item" href="terms.html" title="Terms">Terms</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="privacy.html" title="Privacy">Privacy</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="support.html" title="Support">Support</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a
-                    class="dropdown-item d-flex align-center justify-content-between"
-                    href="#"
-                    >Logout<img src="./assets/images/logout-icon.svg"
-                  /></a>
-                </li>
-              </ul>
-            </div>
-
-            <select name="language-select" id="language-select">
-              <option value="english" selected>English</option>
-              <option value="english">Spanish</option>
-              <option value="english">German</option>
-            </select>
-          </div>
         </div>
+
+        <a class="navbar-brand logo m-auto" href="#"
+          ><img src="assets/images/logo.png" alt=""
+        /></a>
+
+        <div class="dropdown">
+          <button
+            class="btn btn-primary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img src="assets/images/login.png" alt="User" />
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-right dropdown-menu-dark"
+            aria-labelledby="dropdownMenuButton1"
+          >
+            <div class="user-area d-flex">
+              <img src="./assets/images/login-gray.svg" alt="User Thumbnail" />
+
+              <div class="d-flex flex-column justify-content-between">
+                <span>User name</span>
+                <a href="edit-profile.html" title="Edit Profile"
+                  >Edit Profile ></a
+                >
+              </div>
+            </div>
+
+            <li>
+              <button
+                type="button"
+                class="btn-primary xs"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+              >
+                Login
+              </button>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="terms.html" title="Terms">Terms</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="privacy.html" title="Privacy"
+                >Privacy</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="support.html" title="Support"
+                >Support</a
+              >
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a
+                class="dropdown-item d-flex align-center justify-content-between"
+                href="#"
+                >Logout<img src="./assets/images/logout-icon.svg"
+              /></a>
+            </li>
+          </ul>
+        </div>
+
+        <select name="language-select" id="language-select">
+          <option value="english" selected>English</option>
+          <option value="english">Spanish</option>
+          <option value="english">German</option>
+        </select>
       </nav>
     </header>
 
     <main>
-      <div class="title-bar d-flex justify-content-center align-center">
+      <div class="title-bar d-flex justify-content-center align-items-center">
         <div class="breadcrumb d-flex gap-2">
           <span>< </span>
           <a href="index.html" title="Back">Back</a>
@@ -128,175 +126,266 @@
         <div class="row justify-content-center">
           <div class="col-md-10 col-lg-6">
             <div class="text-content pt-3 pb-5">
-              <h2>General</h2>
+              <h2>1. General</h2>
 
               <p>
-                TopTap by Baseplay Limited, (referred to hereafter as the
-                "Company", "we, "us", and/or "our") provides this Privacy Policy
-                to describe how we collect, use, and share the information of
-                individuals who visit our website toptap.co (hereafter referred
-                to as the “website”). This policy further describes how we
-                utilise any related services.
+                IDB Mobile (referred to as "Company," "we," "us," or "our")
+                offers this Privacy Policy to outline our procedures for
+                gathering, utilizing, and sharing information from individuals
+                who visit our website at https://streamstar.co/ (referred to as
+                the "website") and utilize any associated services. For more
+                information about our company, please visit
+                https://idbmobile.com/ .
               </p>
 
               <p>
-                The Company knows that you care about how your information may
-                be used or shared and we are committed to ensuring it is kept
-                secure and used carefully and within the confines of the law.
+                We understand your concern regarding the usage and sharing of
+                your information and are dedicated to maintaining its security
+                and handling it with care.
               </p>
 
               <p>
-                Below you will find a summary of how and why we collect and use
-                your data, who we share it with, and what we are doing to make
-                sure your data is safe and secure.
+                Here, you will find a brief overview of why and how we collect
+                and utilize your data, who we share it with, and the measures we
+                take to ensure the safety and confidentiality of your data.
               </p>
 
-              <h2>Use and Treatment of Information</h2>
+              <h2>2. Service description</h2>
 
               <p>
-                The Company informs the user that any information resulting from
-                visiting its website or contracting its Products and Services
-                will result in related personal data being included in an
-                automated File duly registered in the General Register of the
-                Data Protection as part of its automated processing system. For
-                this end, you as the user express consent to such treatment.
-              </p>
-
-              <p>
-                The Company may use aggregated personal information
-                (non-identifiable) to improve and adapt the service to the needs
-                of the user. This statistical compilation of non-identifiable
-                information may be used or provided to others for marketing
-                purposes, advertising and research. The main goal of the Company
-                in collecting personal information is to provide you, the user,
-                with the most personalized experience possible. Information
-                collected about you enables us to deliver content and
-                advertising more relevant to you, and in turn a better service.
-                Only the Company has access to the individual accounts. The
-                Company may also do research on demographics, interests and
-                behavior based on the information you provided during the
-                registration process, on order forms, during a promotion, as
-                well as information from our server log files or surveys. We do
-                this to better understand and serve our users. This research is
-                compiled and analyzed in aggregate bases and the Company may
-                share this aggregated data with advertisers, researchers and
-                other businesses. From time to time, the Company may use your
-                personal information to send you information about our products
-                and services or other products and services that may be of
-                interest to you. You can unsubscribe from this mailing list by
-                emailing support@toptap.co with the word "UNSUBSCRIBE" in the
-                subject. The Company is the sole owner of information collected
-                on the service. We will not sell, share or rent this information
-                to others in any way that varies from what we specified in this
-                statement. The Company maintains appropriate safeguards to
-                insure the security, integrity and privacy of personally
-                identifiable information in its possession. However, as
-                effective as these measures may be, no security system is
-                impenetrable. We cannot guarantee the security of our database,
-                nor can we guarantee that the information you provide will not
-                be intercepted while being transmitted to us through the
-                Internet.
-              </p>
-
-              <h2>Information We Collect</h2>
-
-              <p>
-                Information collected by the servers: For operational purposes
-                and quality assurance, we take note of whether you use and,
-                where appropriate, how you use the information and services we
-                provide. For example, we record the service traffic patterns and
-                store user access information, such as IP address, mobile device
-                information, OS, browser, etc, on site files (logs). The
-                Company’s servers automatically collect certain non-personal
-                information, such as which pages each user visits and the domain
-                name of the visitors. We use this information for various
-                purposes including internal review, traffic evaluation or
-                adjusting information to individual visitors. A statistical
-                compilation of this non-personal information may also be used
-                and provided to others for marketing purposes, advertising or
-                research.
-              </p>
-
-              <p>
-                Use of cookies: Every user visiting the website might receive a
-                single cookie. A cookie is a small file that websites write to
-                the hard disk drive of your computer when you visit them. A
-                cookie file can contain information such as the ID that the site
-                uses to track the pages you've visited. A cookie cannot read
-                data from the hard disk drive of your computer or read cookie
-                files created by other sites. We use cookies to keep an account
-                of the traffic patterns of users. When you register, we use a
-                cookie to store a unique ID. We use this ID to anonymously
-                identify you in our database and to track the pages that you
-                visit on the service, to determine initial usage versus repeat
-                usage and to help target advertisements based on user interests.
-                Cookies can also help us make adjustments to fit your interests
-                and preferences. Some of our business partners may use cookies
-                on the service (for example, advertisers). However, we have no
-                access or control over these cookies. If you have installed your
-                browser so that you receive a warning before accepting cookies,
-                you will receive a warning for each cookie. You may refuse
-                cookies in your browser leaving them inactive. However, The
-                Company requires cookies for access.
-              </p>
-
-              <p>
-                Personal information required by the Company in order to
-                understand you and your needs: We primarily know you through the
-                information you provide when you register to access the service.
-                The Company requests that you provide personal information to
-                enhance your experience on the service. During the registration
-                process, the Company asks for your name, email address, your
-                city and country. The more accurate the information you provide,
-                the better we can design the service for your experience. We may
-                also request other information, at other times, such as when you
-                enter a contest or participate in a promotion or when ordering
-                services from The Company. You can correct or change information
-                in your profile. You can change this information at any time and
-                as often as deemed necessary.
-              </p>
-
-              <h2>How We Share Your Information</h2>
-              
-              <p>
-                The Company will not sell or rent to any personally identifiable
-                user information. The Company may share your personal
-                information only when:
+                The services accessible via the website allow registered users
+                to engage with fellow users, partake in games, acquire
+                applications, ringtones, wallpapers, and a wide array of other
+                offering.
               </p>
 
               <ul>
                 <li>
-                  you authorize us to share this information, if at the time of
-                  registration, it was suggested to you in the data collection
-                  forms. Importantly, this is not a requirement to receive
-                  excellent service. This is completely optional,
+                  To exit the service send us a email on: support@streamstar.co.
                 </li>
+
                 <li>
                   we need to share this information to provide you a service you
                   have requested,
                 </li>
+
                 <li>
-                  you have been required by court order or law, or to protect
-                  the property rights or other rights of The Company. Your
-                  Personal Information may be shared with third parties, if we
-                  consider that this is necessary to prevent, investigate or
-                  take action regarding illegal activities, crime or a violation
-                  of the law or the terms and conditions governing our various
-                  services, the Company shares Personal Information to its
-                  partners, subsidiaries or affiliates that work with the
-                  Company or on behalf of the Company, under confidentiality
-                  agreements, who may use the Personal Information for
-                  marketing, advertising and research,
+                  Upon successful registration, the user will be provided with a
+                  password and an account designation. It is the user's
+                  responsibility to maintain the confidentiality of this
+                  password and account, and they bear full responsibility for
+                  all activities conducted under said password or account.
                 </li>
+
                 <li>
-                  we may transfer your Personal Information if the Company or
-                  the service merge or consolidate with another company. If this
-                  takes place, you will be notified of such transfer before
-                  performing it. If you have given us your Personal Information,
-                  you give your express consent for the use and processing of
-                  your Personal Information as described above.
+                  The user also commits to promptly notifying The Company of any
+                  unauthorized use of their password or account or any security
+                  breaches, and to log out of their account at the end of each
+                  session.
+                </li>
+
+                <li>
+                  The Company cannot be held accountable for any loss or damage
+                  resulting from the user's failure to adhere to these terms.
+                  Additionally, the Services may offer premium membership
+                  (subject to availability based on location), typically
+                  requiring a subscription fee.
                 </li>
               </ul>
+
+              <h2>3. Collect information</h2>
+
+              <ul>
+                <li>
+                  Data gathered by our servers: To ensure operational efficiency
+                  and maintain service quality, we monitor your utilization of
+                  our information and services, including how you utilize them
+                  when applicable.
+                </li>
+                <li>
+                  As an illustration, we maintain records of service traffic
+                  patterns and retain user access details, such as IP addresses,
+                  mobile device specifications, operating systems, browsers, and
+                  more, in on-site log files. Our company's servers autonomously
+                  collect specific non-identifiable data, such as the pages
+                  visited by each user and the domain names of our visitors.
+                  This information serves various purposes, including internal
+                  assessments, traffic analysis, and customization of content
+                  for individual visitors. Additionally, we may aggregate this
+                  non-identifiable information into statistical reports, which
+                  may be shared with third parties for marketing, advertising,
+                  or research purposes.
+                </li>
+                <li>
+                  Kindly be aware that either we or third parties might gather
+                  Personal Information regarding your online activities across
+                  various devices and online attributes while utilizing the
+                  Services.
+                </li>
+                <li>
+                  It's important to understand that we lack control over how
+                  other parties handle their opt-out procedures.
+                </li>
+                <li>
+                  Use of cookies: Every user visiting the website might receive
+                  a single cookie. A cookie is a small file that websites write
+                  to the hard disk drive of your computer when you visit them. A
+                  cookie file can contain information such as the ID that the
+                  site uses to track the pages you've visited. A cookie cannot
+                  read data from the hard disk drive of your computer or read
+                  cookie files created by other sites. We use cookies to keep an
+                  account of the traffic patterns of users. When you register,
+                  we use a cookie to store a unique ID. We use this ID to
+                  anonymously identify you in our database and to track the
+                  pages that you visit on the service, determine initial usage
+                  versus repeat usage, and help target advertisements based on
+                  user interests. Cookies can also help us make adjustments to
+                  fit your interests and preferences. Some of our business
+                  partners may use cookies on the service (for example,
+                  advertisers). However, we have no access or control over these
+                  cookies. If you have installed your browser so that you
+                  receive a warning before accepting cookies, you will receive a
+                  warning for each cookie. You may refuse cookies in your
+                  browser leaving them inactive. However, The Company requires
+                  cookies for access.
+                </li>
+              </ul>
+
+              <h2>4. Parental consent</h2>
+              <p>
+                Protecting the privacy of children is especially important. For
+                that reason, the Company does not knowingly collect or solicit
+                personal information from anyone under the age of 18. If you are
+                under 18, please do not send any personal information, including
+                your name, address, telephone, or e-mail address. It is not
+                allowed for anyone under the age of 18 to provide any personal
+                information to the Company. In the event that we learn that we
+                have the personal information of someone under 18 without
+                parental consent, we will terminate the account and delete all
+                the personal information as quickly as possible. If you believe
+                that we might have any information from anyone under 18, please
+                contact Customer Support: support@streamstar.co .
+              </p>
+
+              <h2>5. Link to other sites</h2>
+              <p>
+                We are not responsible for the practices employed by websites
+                linked to our website/service or the information or contents
+                contained therein. Please remember that when you use a link to
+                go from the service to another website, our Privacy Policy is no
+                longer valid. Your browsing on any other website, including
+                those linked to the service is subject to that website's own
+                rules and policies. Please read their rules and policies before
+                proceeding.
+              </p>
+
+              <h2>6. Notifications/Copyright</h2>
+              <p>
+                The Company places a high value on respecting third-party
+                copyrights, and we have established a policy to respond to all
+                copyright infringement notifications in accordance with relevant
+                regulations. Upon receiving a notification that adheres to these
+                guidelines, The Company may take action, including but not
+                limited to removing or disabling access to the content believed
+                to be infringing. In some cases, this may also involve disabling
+                a user's account. During these actions, The Company will make
+                efforts to reach out to the party responsible for posting the
+                content, providing them with an opportunity to make any
+                statements they deem necessary in accordance with applicable
+                regulations.
+              </p>
+
+              <h2>7.Advertising</h2>
+              <p>
+                We use third parties such as network advertisers to serve
+                advertisements on our site and email newsletters. Network
+                advertisers are third parties that display advertisements based
+                on your visits to our Site and other websites you have visited.
+                This arrangement allows us, as well as these third parties, to
+                tailor advertisements to your interests in products and
+                services. Third-party ad network providers, advertisers,
+                sponsors, and traffic measurement services may utilize
+                technologies such as cookies, JavaScript, web beacons, Flash
+                LSOs, and other tools to gauge the effectiveness of their
+                advertisements and customize advertising content for you. It's
+                important to note that these third-party cookies and other
+                technologies are subject to the specific privacy policies of
+                each third party, not the one presented here. We may provide
+                these third-party advertisers with aggregated information about
+                your usage of our website and services.
+              </p>
+
+              <h2>8. Contact US</h2>
+              <p>
+                Please note that cancelling the service stops future charges,
+                but it won't refund any past charges. There are no hidden fees
+                or minimum product purchases required. For full terms and
+                details, please refer to Terms and Privacy Policy. This offer is
+                for users aged 18 and above. Please contact our support team
+                support@streamstar.co.
+              </p>
+
+              <h2>9. Payment & Refunds</h2>
+              <p>
+                Our company holds our customers in high regard and is committed
+                to delivering top-notch products and services. We recognize that
+                there may be instances where customers wish to request a refund
+                for a purchase made via credit card payment on our website. The
+                approval of refunds for credit card payments is solely at the
+                discretion of our company.
+              </p>
+
+              <p>
+                Should you find your purchase unsatisfactory, you have the
+                option to seek a refund by reaching out to our customer support
+                team at support@streamstar.co . We will diligently assess your
+                request and promptly communicate the results of our review to
+                you. If your refund request is deemed valid, we will credit the
+                full purchase amount to your credit card account, after
+                deducting any relevant fees or charges. Please take note that
+                refunds will exclusively be credited to the credit card used
+                during the initial purchase. Moreover, refunds will only be
+                granted to the original purchaser of the product, and no third
+                parties, including spouses, relatives, partners, etc., are
+                eligible to request refunds on behalf of the purchaser or under
+                their own account.
+              </p>
+
+              <p>
+                It's essential to acknowledge that IDB Mobile retains the
+                discretion to decline refund requests for various reasons, which
+                may include, but are not restricted to, the following:
+              </p>
+
+              <ul>
+                <li>Products or services that have been used or consumed.</li>
+                <li>Non-compliance with our terms and conditions of sale.</li>
+                <li>
+                  Engagement in fraudulent activity or misuse of our refund
+                  policy.
+                </li>
+                <li>
+                  Refund requests submitted beyond the specified time frame.
+                </li>
+                <li>
+                  In cases where a refund is approved, please be aware that it
+                  might take up to 20 working days for the refund to reflect on
+                  the User's credit card statement.
+                </li>
+              </ul>
+
+              <h2>10. Fraud</h2>
+              <p>
+                Engaging in fraudulent or abusive activities involving personal
+                login credentials may lead to the termination of your account.
+                The user bears responsibility for any fraudulent activity
+                arising from the theft or sharing of their personal login
+                details. The Services are intended for individual users who are
+                natural persons, for their personal use. Sharing personal login
+                details in any manner will be deemed fraudulent and a violation
+                of these terms and conditions. Users found sharing such
+                information will have their accounts deleted.
+              </p>
             </div>
           </div>
         </div>
